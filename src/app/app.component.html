@@ -1,0 +1,14 @@
+ <nav>
+      <a routerLink="/" [state]="{
+            id: 2,
+            productName: 'Link Modem',
+            productCode: 'LK700',
+            description: 'Linksys modem',
+            prodRating: 5.0
+        }">Product List</a>
+      <a  [routerLink]="" (click)="productDetails()">  | Product Details</a>
+    </nav>
+   <h1>State Value in Product component</h1>
+  <pre>{{ appstate$ | async | json }}</pre>
+    
+     <router-outlet></router-outlet>
